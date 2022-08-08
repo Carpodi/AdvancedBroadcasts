@@ -1,7 +1,7 @@
 name: AdvancedBroadcasts
 version: '${project.version}'
 main: xyz.carpodi.advancedbroadcasts.AdvancedBroadcasts
-api-version: 1.19
+api-version: 1.16
 authors: [ Carpodi ]
 description: This plugin makes your server broadcasts/announcements more custom!
 website: https://github.com/carpodi
