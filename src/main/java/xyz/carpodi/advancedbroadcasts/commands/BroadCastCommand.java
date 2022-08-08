@@ -1,4 +1,4 @@
-package xyz.carpodi.advancedbroadcasts.Commands;
+package xyz.carpodi.advancedbroadcasts.commands;
 import com.google.common.base.Joiner;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -32,12 +32,14 @@ public class BroadCastCommand implements CommandExecutor {
             if (args.length > 0) {
 
                 String message = Joiner.on(" ").skipNulls().join(args);
-                String prefix = ChatColor.translateAlternateColorCodes('&', "P&1Anuncio]");
-                StringBuilder str = new StringBuilder();
-                String s = str.toString();
-                String coloredString = ChatColor.translateAlternateColorCodes('&', s);
-                Player online = (Player) Bukkit.getServer().getOnlinePlayers();
-                online.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix + message));
+                String prefix = ChatColor.translateAlternateColorCodes('&', "[&1Anuncio]");
+
+
+                for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+                    onlinePlayer.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix + message));
+                }
+
+
             }
 
 
