@@ -7,7 +7,7 @@ This plugin is for more custom minecraft server broadcasts.
 
 ## Download 
 
-You can download this plugin in [Relases](https://github.com/Carpodi/AdvancedBroadcasts/releases).
+You can download this plugin in [Releases](https://github.com/Carpodi/AdvancedBroadcasts/releases).
 
 ## How To (Compiling From Source)
 
