@@ -5,6 +5,10 @@ This plugin is for more custom minecraft server broadcasts.
 
 ---
 
+## Download 
+
+You can download this plugin in [Relases](https://github.com/Carpodi/AdvancedBroadcasts/releases).
+
 ## How To (Compiling From Source)
 
 To compile AdvancedBroadcasts, you need JDK11, git, bash, maven.
