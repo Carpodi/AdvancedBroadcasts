@@ -8,6 +8,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import xyz.carpodi.advancedbroadcasts.AdvancedBroadcasts;
 
+import java.util.Objects;
+
 public class BroadCastCommand implements CommandExecutor {
     private AdvancedBroadcasts plugin;
 
@@ -32,7 +34,7 @@ public class BroadCastCommand implements CommandExecutor {
             if (args.length > 0) {
 
                 String message = Joiner.on(" ").skipNulls().join(args);
-                String prefix = ChatColor.translateAlternateColorCodes('&', "[&1Anuncio]");
+                String prefix = plugin.getConfig().getString("msg.prefix");
 
 
                 for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {

@@ -14,6 +14,13 @@ public final class AdvancedBroadcasts extends JavaPlugin {
     public void onEnable() {
         getCommand("broadcast").setExecutor((CommandExecutor) new BroadCastCommand(this));
 
+        /*
+        *Start code add by HappyRogelio7
+        */
+        registerConfigs();
+        /*
+         *END code add by HappyRogelio7
+         */
     }
 
     @Override
