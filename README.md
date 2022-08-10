@@ -1,5 +1,5 @@
 # AdvancedBroadcasts
-This plugin is for more custom minecraft server broadcasts.
+This plugins helps you to make announcements (Broadcasts) for your minecraft server/network!
 
 
 
