@@ -7,6 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import xyz.carpodi.advancedbroadcasts.AdvancedBroadcasts;
+import xyz.carpodi.advancedbroadcasts.utils.MessageColors;
 
 import java.util.Objects;
 
@@ -20,14 +21,14 @@ public class BroadCastCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        Player p = (Player) sender;
-        if (!p.hasPermission("broadcast.use")) {
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cSorry! You dont have permission to use this."));
+
+        if (!sender.hasPermission("broadcast.use")) {
+            sender.sendMessage(MessageColors.getMsgColor("&cSorry! You dont have permission to use this."));
             return true;
         }else {
 
             if (args.length == 0) {
-                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cUssage: /broadcast <message>"));
+                sender.sendMessage(MessageColors.getMsgColor(("&cUssage: /broadcast <message>")));
                 return true;
             }
 
@@ -38,7 +39,7 @@ public class BroadCastCommand implements CommandExecutor {
 
 
                 for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-                    onlinePlayer.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix + message));
+                    onlinePlayer.sendMessage(MessageColors.getMsgColor( prefix + message));
                 }
 
 

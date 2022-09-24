@@ -2,9 +2,9 @@ name: AdvancedBroadcasts
 version: '${project.version}'
 main: xyz.carpodi.advancedbroadcasts.AdvancedBroadcasts
 api-version: 1.16
-authors: [ Carpodi ]
+authors: [ Carpodi, HappyRogelio7, Kamila21Y ]
 description: This plugin makes your server broadcasts/announcements more custom!
-website: https://github.com/carpodi
+website: https://github.com/KaoryStudios
 commands:
   broadcast:
     usage: /broadcast <message>
